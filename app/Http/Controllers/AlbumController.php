@@ -39,4 +39,13 @@ class AlbumController extends Controller
         $album->save();
         return redirect('/album')->with('pesan', 'Data album berhasil disimpan');
     }
+
+    public function destroy($id)
+    {
+        $album = Album::find($id);
+        $namafile = $album->gambar;
+        File::delete('/images'.$namafile);
+        $album->delete();
+        return redirect('/album')->with('pesan','Data album berhasil dihapus');
+    }
 }

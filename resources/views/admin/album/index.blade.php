@@ -10,7 +10,12 @@
   </div>
   <div class="card-body">
     @if(Session::has('pesan'))
-        <div class="alert alert-success">{{Session::get('pesan')}}</div>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+          {{Session::get('pesan')}}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
     @endif             
     <table class="table table-striped">
         <thead class="thead-light">

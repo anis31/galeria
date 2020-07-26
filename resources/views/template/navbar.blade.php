@@ -9,7 +9,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav">
           <li class="nav-item px-2">
-            <a href="" class="nav-link active">Album</a>
+            <a href="/album" class="nav-link active">Album</a>
           </li>
           <li class="nav-item px-2">
             <a href="" class="nav-link active">Galeri Foto</a>
